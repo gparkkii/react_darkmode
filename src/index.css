@@ -1,7 +1,10 @@
 /* FONT */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
-
+@import url(
+  'https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap'
+);
+@import url(
+  "https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css"
+);
 
 /* CSS RESET */
 *, ::after, ::before {
@@ -117,7 +120,7 @@ html, #root {
 } 
 
   body {
-    background: #fff;
+    background-color: #f7f6f2;;
     color: #212121;
     position: relative;
     display: block;
@@ -126,8 +129,9 @@ html, #root {
     line-height: 1.5;
     margin: 0 auto;
     font-family:
-      "Roboto",
+      "Montserrat",
       "Helvetica Neue",
+      "NanumSquare",
       "Noto Sans",
       "Noto Sans CJK KR",
       sans-serif;
