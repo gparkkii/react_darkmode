@@ -1,15 +1,19 @@
 import React from 'react';
-import { FlexContainer } from '../style/styles';
 import styled from 'styled-components';
+import { useTheme } from '../context/themeProvider';
+import { FlexContainer } from '../style/styles';
+import ThemeToggle from '../theme/ThemeToggle';
 import Header from './Header';
 
 const AppLayout = ({children}) => {
+  const [ThemeMode, toggleTheme] = useTheme();
   return (
     <WrapContainer>
       <Header />
-      <FlexContainer>
-        {children}
-      </FlexContainer> 
+      <ThemeToggle toggle={toggleTheme} mode={ThemeMode}>
+        DarkMode
+      </ThemeToggle>
+      <FlexContainer>{children}</FlexContainer> 
     </WrapContainer>
   )
 }
