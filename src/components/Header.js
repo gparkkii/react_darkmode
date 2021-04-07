@@ -30,7 +30,7 @@ const StyledHeader = styled.ul`
   width: 100%;
   height: 60px;
   padding: 0px 24px;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: ${({ theme }) => theme.borderColor};
 `
 
 const RightMenu = styled.li`
@@ -41,11 +41,11 @@ const RightMenu = styled.li`
       width: 30px;
     }
     & p {
-    margin-left: 2px;
-    font-size: 16px;
-    font-weight: 500;
-    color: #E6B74A;
-  }
+      margin-left: 2px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #E6B74A;
+    }
   }
 `
 

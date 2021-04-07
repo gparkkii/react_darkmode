@@ -7,24 +7,16 @@ export const FlexContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  transition: all 0.2s;
+  padding: 0px 28px;
+  transition: all 0.2s linear;
   width: calc(100%-2rem);
-  height: calc(100vh - 60px);
-
-  ${media.tablet`
-    width: calc(100%-1rem);
-  `}
-  ${media.desktop`
-    width: 100%;
-    height: calc(100vh - 60px);
-    padding: 0px 20px;
-  `}
+  height: 90vh;
 
   & h2 {
     font-size: 48px;
     font-weight: 500;
-    padding-bottom: 60px;
-    color: #31302E;
+    padding-bottom: 40px;
+    color: ${({ theme }) => theme.textColor};
     text-align: center;
   }
 `;
