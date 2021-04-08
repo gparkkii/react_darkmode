@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# React Darkmode
+사용자 경험을 최상으로 이끌어주는 디자인 트렌드 `다크모드 UI`를 리액트 애플리케이션에 적용한 서비스입니다.
+<br/>
+다크모드 UI 적용을 위해 `styled-components`, 테마 상태관리를 위해 `context api` 및 `custom hook`을 사용했습니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Quick Start
+- 애플리케이션 설치
+```bash
+$> npm i
+```
+- 애플리케이션 실행
+```bash
+$> npm start
+```
 
-## Available Scripts
+<br/>
 
-In the project directory, you can run:
+## 🔎 Features
+1. 다크모드 테마 & 글로벌 스타일 설정
+2. Context API로 ThemeProvider 커스텀
+3. Custom hook으로 테마 관리 및 로컬 스토리지 상태 저장
+4. 다크모드 토글 버튼 생성
+5. 다크모드 context value로 custom style 적용
 
-### `yarn start`
+<br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🛠 Project Structure
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### 프로젝트 구조 (/src)
 
-### `yarn test`
+- `assets` : 이미지 파일 디렉토리
+- `components` : view 컴포넌트 디렉토리
+- `context` : darkmode context api 디렉토리
+- `style` : styled-components를 이용한 공통 style 디렉토리
+- `theme` : 다크모드 테마, 토글 버튼 디렉토리
+- `App.js` : Route 처리 및 Theme Context 적용 
+- `index.js` : 애플리케이션 엔트리 포인트
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```text
+src
+├── assets ───────────────  이미지 파일
+│   └── logo
+│
+├── components ───────────  view 컴포넌트
+│   ├── AppLayout
+│   ├── Header
+│   ├── Main
+│   └── Sub
+│
+├── context ──────────────  darkmode context api
+│   └── themeProvider
+│
+├── style ────────────────  styled-components' custom style
+│   ├── media_query
+│   └── styles
+│
+├── theme ────────────────  다크모드 테마, 토글 버튼 디렉토리
+│   ├── GlobalStyles
+│   ├── ThemeToggle
+│   └── theme
+│
+├── App.js ───────────────  Route 처리 및 Theme Context 적용
+├── index.css ────────────  공통 css
+└── index.js ─────────────  애플리케이션 엔트리 포인트
+```
 
-### `yarn build`
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### 중요 라이브러리 (package)
+```text
+package.json
+├── react : 리액트 라이브러리
+├── styled-components : UI 라이브러리
+├── styled-reset : css 초기화 라이브러리
+└── react-router-dom : 리액트 라우트 처리
+```
