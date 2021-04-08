@@ -28,14 +28,6 @@ $> npm start
 
 #### 프로젝트 구조 (/src)
 
-- `assets` : 이미지 파일 디렉토리
-- `components` : view 컴포넌트 디렉토리
-- `context` : darkmode context api 디렉토리
-- `style` : styled-components를 이용한 공통 style 디렉토리
-- `theme` : 다크모드 테마, 토글 버튼 디렉토리
-- `App.js` : Route 처리 및 Theme Context 적용 
-- `index.js` : 애플리케이션 엔트리 포인트
-
 ```text
 src
 ├── assets ───────────────  이미지 파일
