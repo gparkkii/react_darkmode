@@ -2,6 +2,8 @@
 
 > Styled-Components & Context API로 리액트 다크모드 구현하기
 
+<br/>
+
 <p align="center">
   <img width="800" alt="darkmode_web" src="https://user-images.githubusercontent.com/71811780/114021498-bba64e00-98ab-11eb-9c90-281093fbfc90.gif">
 </p>
