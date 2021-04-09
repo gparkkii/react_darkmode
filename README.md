@@ -22,17 +22,19 @@ $> npm start
 <br/>
 
 ## 🔎 Features
-1. 다크모드 테마 & 글로벌 스타일 설정
+1. 다크모드 테마 및 글로벌 스타일 설정
 2. Context API로 ThemeProvider 커스텀
-3. Custom hook으로 테마 관리 및 로컬 스토리지 상태 저장
-4. 다크모드 토글 버튼 생성
-5. 다크모드 context value로 custom style 적용
+3. Custom hook으로 테마 관리
+4. 로컬스토리지에 테마 저장 및 유지
+5. 다크모드 토글 버튼 생성
+
+- 기능 별 자세한 설명 및 프로그래밍 과정은 https://velog.io/@gparkkii/reactdarkmode 에서 확인 가능합니다.
 
 <br/>
 
 ## 🛠 Project Structure
 
-#### - 주요 라이브러리 (package)
+#### 주요 라이브러리 (package)
 ```text
 package.json
 ├── react : 리액트 라이브러리
@@ -43,7 +45,7 @@ package.json
 
 <br/>
 
-#### - 프로젝트 구조 (/src)
+#### 프로젝트 구조 (/src)
 
 ```text
 src
