@@ -1,13 +1,13 @@
 # 🌝 React Darkmode
-사용자 경험을 최상으로 이끌어주는 디자인 트렌드 `다크모드 UI`를 리액트 애플리케이션에 적용한 서비스입니다.
-다크모드 UI 적용을 위해 `styled-components`, 테마 상태관리를 위해 `context api` 및 `custom hook`을 사용했습니다.
-<br/>
 
 <p align="left">
   <img width="800" alt="darkmode_web" src="https://user-images.githubusercontent.com/71811780/114021498-bba64e00-98ab-11eb-9c90-281093fbfc90.gif">
 </p>
 
 <br/>
+
+사용자 경험을 최상으로 이끌어주는 디자인 트렌드 `다크모드 UI`를 리액트 애플리케이션에 적용한 서비스입니다.
+다크모드 UI 적용을 위해 `styled-components`, 테마 상태관리를 위해 `context api` 및 `custom hook`을 사용했습니다.
 
 ## 🚀 Quick Start
 - 애플리케이션 설치
